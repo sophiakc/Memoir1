@@ -6,6 +6,7 @@
 
 ### Team members
 [**Monith Ilavarasan**](https://github.com/Monith)
+
 [**Sophia Kecir Camper**](https://github.com/sophiakc)
 
 
@@ -41,7 +42,7 @@ Personal diary attached to my calendar, using Google calendar API and a native c
 
 ## License
 
-    Copyright [2016] [Memoir]()
+    Copyright [2016] Memoir
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
