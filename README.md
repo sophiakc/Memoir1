@@ -7,6 +7,8 @@
 ### Team members
 [**Monith Ilavarasan**](https://github.com/Monith)
 
+[**Sindhuja Narasimhan**](https://github.com/sindunarasimhan)
+
 [**Sophia Kecir Camper**](https://github.com/sophiakc)
 
 
