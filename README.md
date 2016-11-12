@@ -16,14 +16,33 @@
 Personal diary attached to my calendar, using Google calendar API and a native calendar.
 
 
-### Wireframes
+### Wireframes W3
 ![2016 10 30 Memoir app mockup](2016 10 30 Memoir app mockup.jpg)
 
+### Wireframes W4
+![Launchscreen](W4 Group - Memoir app mockup 1. Launchscreen.png)
+![Onboarding1](W4 Group - Memoir app mockup 2. onboarding1.png)
+![Onboarding2](W4 Group - Memoir app mockup 2. onboarding2.png)
+![Onboarding3](W4 Group - Memoir app mockup 2. onboarding3.png)
+![Signup](W4 Group - Memoir app mockup 3. Sign Up.png)
+![Writing view](W4 Group - Memoir app mockup 4.1 Writing view.png)
+![Confirmation view](W4 Group - Memoir app mockup 4.2 Writing view.png)
+![Read-only text view](W4 Group - Memoir app mockup 4.3 Writing view.png)
+![New writing](W4 Group - Memoir app mockup 4.4 Writing view (again).png)
+![Today view](W4 Group - Memoir app mockup 5. Today view.png)
+![Week view](W4 Group - Memoir app mockup 6.1 Week view.png)
+![Week view](W4 Group - Memoir app mockup 6.2 Week view + search.png)
+![Calendar sign in w Google](W4 Group - Memoir app mockup 6.3 Calendar view.png)
+![Calendar view](W4 Group - Memoir app mockup 6.4 Calendar view.png)
+![Calendar event detailed view](W4 Group - Memoir app mockup 6.5 Calendar view.png)
 
-### User Stories - Implementation part #1
-* [ ] Full-screen text editing
-* [ ] Native calendar view
-* [ ] Google calendar API
+
+
+### User Stories - Implementation part #1 (cf. Figma: purple rectangles)
+* [ ] User story #1
+* [ ] User story #2
+* [ ] User story #3
+* [ ] User story #4
 
 
 ### User Stories - Implementation part #2
