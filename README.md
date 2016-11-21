@@ -38,29 +38,52 @@ Personal diary attached to my calendar, using Google calendar API and a native c
 
 
 
-### User Stories - Implementation part #1 (cf. Figma: purple rectangles)
-* [X] "Start Writing" View Controller
-	* [X] TextView to edit text
-	* [ ] Unlock icon: 
-		* [ ] Reveal icon by following toggle movement of keyboard
-		* [ ] Push or Modal segue to next screen
-	* [ ] UI Button for time and location
-		* [ ] Push or Modal segue to Settings page and location enable popup
-		* [ ] Settings: set up local time and location
-* [ ] "Read Only" View Controller
-	* [ ] transition animation with lock icon full screen
-* [ ] Today View Controller
-* [ ] This Week View Controller 
+### User Stories
+* [X] "Start Writing" View Controller (initial View Controller)
+    * [X] TextView to edit text - Sophia
+        * [ ] As a new user, I can UI Pan Gesture Left and see that I don't have any previous text entry (cf. Dropbox W1: http://courses.codepath.com/courses/ios_for_designers/unit/1#!assignment) - Sophia (ongoing)
+        * [ ] Reveal icon by following toggle movement of keyboard
+    
+    * [X] UI Button for time and location - Sophia
+        * [X] Push or Modal segue to Settings page and location enable popup - Sophia
+        * [ ] Settings: set up local time and location based on actual data
+    
+    * [ ] Unlock icon: 
+        * [ ] Before performing Segue, when tapping on it, message pop up shows up: "Are you sure you have finished writing? You won't be able to edit this text again, it will be read only"
+        * [ ] Save text somewhere in a database?? as the latest text
+        * [X] Push or Modal segue to next screen - Monith
+    
+    * [ ] As a new user, when I tap on 
 
+* [ ] Animation from "Start Writing" to "Read Only" View Controller
+    * [ ] transition animation with lock icon full screen, then go to read only text
+    * [X] UIScrollView with no icon - Sophia
 
-### User Stories - Implementation part #2
-* [ ] 
+* [ ] "Today" View Controller
+    * [ ] Vertical UIScrollView to bottom to see the different texts written per day
+    * [ ] Horizontal UIScrollView to left to see the text from the day before, and the day before..., one day = one screen
+    * [ ] Horizontal UIScrollView to right go to a new "Start Writing" View Controller
+
+* [ ] Animation from any "Read Only" VC to "This Week" VC
+    * [ ] When Scroll ends OR when Pan, UI Pan Gesture from bottom to up to go to "Today" VC
+
+* [ ] This Week View Controller
+    * [ ] Horizontal UIScrollView to see the different days of the month
+    * [ ] Pan down to reveal search
+    * [ ] from day to week view: shrink 7 columns into 1
+    * [ ] from day to month view: shrink 30 columns into 1
+    * [ ] from week to month view: shrink 4 columns into 1
+
+* [ ] Launch screen
+
+* [ ] UIScrollView through the 3 onboarding screens
+
 
 
 
 ## Video Walkthrough
 
-![memoir](memoir.gif)
+![Memoir](memoir.gif)
 
 
 
