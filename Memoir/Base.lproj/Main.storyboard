@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="CHb-hi-GFR">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -13,17 +13,151 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="W4 Group - Memoir app mockup 4.1 Writing view" id="PSq-xJ-BVx">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="42B-zI-R1E">
+                                <frame key="frameInset" minX="292" minY="350" width="83" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="mAS-gl-1pr" kind="modal" animates="NO" id="Me7-ad-OIq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="203"/>
+            <point key="canvasLocation" x="198" y="203"/>
+        </scene>
+        <!--Message Send View Controller-->
+        <scene sceneID="UkS-qO-auF">
+            <objects>
+                <viewController id="mAS-gl-1pr" customClass="MessageSendViewController" customModule="Memoir" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iTH-DD-ZAW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" misplaced="YES" image="W4 Group - Memoir app mockup 4.3 Writing view" id="ULW-fY-Mu8">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0Kt-f2-zfN" appends="YES" id="Uwj-rV-BlA"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="CHb-hi-GFR" kind="modal" identifier="MessageSendSegue" modalTransitionStyle="partialCurl" id="fjp-C2-60Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYY-Tw-vjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="0Kt-f2-zfN">
+                    <connections>
+                        <action selector="MessageEndSwipe:" destination="mAS-gl-1pr" id="oXu-29-26J"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="728" y="203"/>
+        </scene>
+        <!--First Calendar View Controller-->
+        <scene sceneID="tRw-qP-Q9D">
+            <objects>
+                <viewController id="iFm-fy-XB6" customClass="FirstCalendarViewController" customModule="Memoir" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ms1-EI-Lap">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="W4 Group - Memoir app mockup 5. Today view" id="oVT-n1-GGe">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="P2g-DU-KQZ" kind="modal" identifier="WeekSegue" id="85t-0v-RLq"/>
+                        <segue destination="CHb-hi-GFR" kind="modal" identifier="BackHomeSegue" modalTransitionStyle="crossDissolve" id="xj7-a1-taU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jao-NW-XJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339" y="1025"/>
+        </scene>
+        <!--Home Transition View Controller-->
+        <scene sceneID="G1i-sT-WV0">
+            <objects>
+                <viewController id="CHb-hi-GFR" customClass="HomeTransitionViewController" customModule="Memoir" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N7a-5J-yur">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="W4 Group - Memoir app mockup 4.4 Writing view (again)" id="MaT-RO-CLy">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RAa-ab-1w0">
+                                <frame key="frameInset" minY="20" width="375" height="444"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" identifier="BackHomeSegue" animates="NO" id="tic-ZN-3vh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="iFm-fy-XB6" kind="modal" identifier="TodaySegue" id="AUs-mb-4EI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pO5-Nk-1Xv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-340" y="203"/>
+        </scene>
+        <!--Calendar Week View Controller-->
+        <scene sceneID="lcf-ct-8nk">
+            <objects>
+                <viewController id="P2g-DU-KQZ" customClass="CalendarWeekViewController" customModule="Memoir" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y9H-o4-tii">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="W4 Group - Memoir app mockup 6.1 Week view" id="2VL-fE-nsE">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="iFm-fy-XB6" kind="modal" identifier="DayViewSegue" modalTransitionStyle="crossDissolve" id="b8i-8K-1yh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTg-bg-QAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-340" y="1896"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="W4 Group - Memoir app mockup 4.1 Writing view" width="299" height="528"/>
+        <image name="W4 Group - Memoir app mockup 4.3 Writing view" width="289" height="511"/>
+        <image name="W4 Group - Memoir app mockup 4.4 Writing view (again)" width="316" height="559"/>
+        <image name="W4 Group - Memoir app mockup 5. Today view" width="301" height="533"/>
+        <image name="W4 Group - Memoir app mockup 6.1 Week view" width="328" height="582"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="xj7-a1-taU"/>
+        <segue reference="b8i-8K-1yh"/>
+    </inferredMetricsTieBreakers>
 </document>
