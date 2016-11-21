@@ -7,7 +7,7 @@
 ### Team members
 [**Monith Ilavarasan**](https://github.com/Monith)
 
-[**Sindhuja Narasimhan**](https://github.com/sindunarasimhan)
+[**Namrata Mohanty**](https://github.com/nmohanty)
 
 [**Sophia Kecir Camper**](https://github.com/sophiakc)
 
@@ -39,10 +39,18 @@ Personal diary attached to my calendar, using Google calendar API and a native c
 
 
 ### User Stories - Implementation part #1 (cf. Figma: purple rectangles)
-* [ ] User story #1
-* [ ] User story #2
-* [ ] User story #3
-* [ ] User story #4
+* [X] "Start Writing" View Controller
+	* [X] TextView to edit text
+	* [ ] Unlock icon: 
+		* [ ] Reveal icon by following toggle movement of keyboard
+		* [ ] Push or Modal segue to next screen
+	* [ ] UI Button for time and location
+		* [ ] Push or Modal segue to Settings page and location enable popup
+		* [ ] Settings: set up local time and location
+* [ ] "Read Only" View Controller
+	* [ ] transition animation with lock icon full screen
+* [ ] Today View Controller
+* [ ] This Week View Controller 
 
 
 ### User Stories - Implementation part #2
