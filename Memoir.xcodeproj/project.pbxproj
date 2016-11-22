@@ -20,6 +20,7 @@
 		7EDCF6561DCA7E0F00299844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDCF6541DCA7E0F00299844 /* LaunchScreen.storyboard */; };
 		7EDCF6611DCA7E0F00299844 /* MemoirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDCF6601DCA7E0F00299844 /* MemoirTests.swift */; };
 		7EDCF66C1DCA7E1000299844 /* MemoirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDCF66B1DCA7E1000299844 /* MemoirUITests.swift */; };
+		933D85AF1DE4F78A0038662A /* ReadOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D85AE1DE4F78A0038662A /* ReadOnlyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		7EDCF6671DCA7E1000299844 /* MemoirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDCF66B1DCA7E1000299844 /* MemoirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoirUITests.swift; sourceTree = "<group>"; };
 		7EDCF66D1DCA7E1000299844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933D85AE1DE4F78A0038662A /* ReadOnlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadOnlyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				12786F941DE2911000B2D778 /* HomeTransitionViewController.swift */,
+				933D85AE1DE4F78A0038662A /* ReadOnlyViewController.swift */,
 				12786F921DE28AE600B2D778 /* MessageSendViewController.swift */,
 				12786F961DE29C0B00B2D778 /* FirstCalendarViewController.swift */,
 				12786F981DE29E9E00B2D778 /* CalendarWeekViewController.swift */,
@@ -290,6 +293,7 @@
 				12786F931DE28AE600B2D778 /* MessageSendViewController.swift in Sources */,
 				7E7FF3411DD739A0005B9CB2 /* Common.swift in Sources */,
 				12786F951DE2911000B2D778 /* HomeTransitionViewController.swift in Sources */,
+				933D85AF1DE4F78A0038662A /* ReadOnlyViewController.swift in Sources */,
 				7E7FF3421DD739A0005B9CB2 /* FadeTransition.swift in Sources */,
 				12786F991DE29E9E00B2D778 /* CalendarWeekViewController.swift in Sources */,
 				7E7FF3401DD739A0005B9CB2 /* BaseTransition.swift in Sources */,
