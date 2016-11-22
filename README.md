@@ -62,9 +62,10 @@ Personal diary attached to my calendar, using Google calendar API and a native c
     * [ ] Horizontal scroll left to see previous written texts from the most recent to the last recent
 
 * [ ] Animation from any "Read Only" VC to the corresponding "Today" VC
-    * [ ] UI Pan Gesture down goes to "Today" VC
-    * [ ] The Read only text shrink into the Today small bubble view within the timeline
+    * [X] UI Pan Gesture down reveals "Today" VC - Namrata
+    * [ ] The Read only text shrink into the Today small bubble view within the timeline - Namrata (ongoing)
     * [ ] The number in the big bubbles updates based on the actual number of words written
+    * [ ] The number in the big bubbles updates based on the actual number of times a text has been written during the same day
 
 * [ ] "Today" View Controller
     * [ ] Vertical UIScrollView to bottom to see the different texts written per day in the timeline
