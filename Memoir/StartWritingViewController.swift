@@ -13,11 +13,21 @@ class StartWritingViewController: UIViewController {
     // Outlets
     @IBOutlet weak var startWritingView: UIView!
     
+    @IBOutlet weak var textField: UITextView!
+    
+    
     // Variables
-    var startWritingViewOriginalCenter: CGPoint!
+//    var startWritingViewOriginalCenter: CGPoint!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textField.textContainerInset = UIEdgeInsetsMake(24, 4, 0, 2)
+        textField.becomeFirstResponder()
+        
 
 //        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
 //        swipeRight.direction = UISwipeGestureRecognizerDirection.right
@@ -76,7 +86,36 @@ class StartWritingViewController: UIViewController {
     
         
     }
-
+    
+//    
+//    // UIAlertConroller when click unlock icon
+//
+//    let alertController = UIAlertController(title: "Lock editing", message: "Are you sure you're done writing?", preferredStyle: .actionSheet)
+//    
+////    var alertController = UIAlertController(title: "Lock editing", message: "Are you sure you're done writing?", preferredStyle: .actionSheet)
+//    
+//    let lockAction = UIAlertAction(title: "Lock", style: .destructive) { (action) in
+//        // handle case of user locking text
+//    }
+//    
+//    // add the lock action to the alert controller
+////    alertController.addAction(lockAction)
+//    
+//    let continueAction = UIAlertAction(title: "Continue writing", style: .cancel) { (action) in
+//        // handle case of user willing to continue writing. Doing nothing will dismiss the view.
+//    }
+//    // add the cancel action to the alert controller
+////    alertController.addAction(continueAction)
+//    
+//    
+//    present(alertController, animated: true) {
+//    // optional code for what happens after the alert controller has finished presenting
+//    }
+    
+    
+    
+    
+    
 }
-    
-    
+
+

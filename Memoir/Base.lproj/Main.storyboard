@@ -189,19 +189,31 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" id="wad-nD-fOl" userLabel="Start Writing View">
-                                <frame key="frameInset" width="321" height="568"/>
+                                <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Today..." textAlignment="natural" minimumFontSize="17" id="xDb-7N-Zc5" userLabel="Text Field">
-                                        <frame key="frameInset" minX="8" minY="22" width="314" height="304"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" id="5Zm-27-2b8" userLabel="Text Field">
+                                        <frame key="frameInset" width="320" height="246"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.97410366879999999" green="0.10261040120000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HoJ-vr-srM" userLabel="Time Location Button">
-                                        <frame key="frameInset" minY="269" width="320" height="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="unlock" id="5AF-T5-Iw2" userLabel="Unlock icon">
+                                        <frame key="frameInset" minX="261" minY="247" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RAa-ab-1w0" userLabel="Lock Button">
+                                        <frame key="frameInset" minX="250" minY="247" width="63" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="modal" identifier="BackHomeSegue" animates="NO" id="tic-ZN-3vh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HoJ-vr-srM" userLabel="Time Location Button">
+                                        <frame key="frameInset" minX="-1" minY="291" width="322" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <state key="normal" title="November 10th, 2016 - 2:06pm - Undefined location">
@@ -209,17 +221,6 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                                         </state>
                                         <connections>
                                             <segue destination="nW0-FD-gRT" kind="modal" id="Wt3-Vx-CCn"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="unlock" id="5AF-T5-Iw2" userLabel="Unlock icon">
-                                        <frame key="frameInset" minX="261" minY="225" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RAa-ab-1w0" userLabel="Lock Button">
-                                        <frame key="frameInset" minX="250" minY="219" width="63" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="modal" identifier="BackHomeSegue" animates="NO" id="tic-ZN-3vh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -235,6 +236,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                     <navigationItem key="navigationItem" id="pHq-db-hOu"/>
                     <connections>
                         <outlet property="startWritingView" destination="wad-nD-fOl" id="Ddq-Bu-iFD"/>
+                        <outlet property="textField" destination="5Zm-27-2b8" id="Ze3-7a-yB4"/>
                         <segue destination="iFm-fy-XB6" kind="modal" identifier="TodaySegue" id="AUs-mb-4EI"/>
                     </connections>
                 </viewController>
