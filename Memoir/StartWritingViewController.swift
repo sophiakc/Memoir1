@@ -23,6 +23,7 @@ class StartWritingViewController: UIViewController {
         super.viewDidLoad()
         
         textField.becomeFirstResponder()
+        textField.textContainerInset = UIEdgeInsetsMake(24, 4, 0, 2)
 
 //        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
 //        swipeRight.direction = UISwipeGestureRecognizerDirection.right
