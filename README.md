@@ -43,6 +43,7 @@ Personal diary attached to my calendar, using Google calendar API and a native c
     * [X] No Text Yet to Start Writing - Sophia
         * [X] As a new user, I see that I am going through "No Text Yet" and go straight to "Start Writing" - Sophia
         * [X] As a new user, I can UI Pan Gesture Left and see that I don't have any previous text entry (cf. Dropbox W1: http://courses.codepath.com/courses/ios_for_designers/unit/1#!assignment) - Sophia
+        * [X] Automatically Select Text field and toggle keyboard when view loaded with textField.becomeFirstResponder() method - Sophia
         * [ ] Reveal unlock icon + location and time button by following the toggle movement of keyboard
     
     * [X] UI Button for time and location - Sophia

@@ -12,12 +12,15 @@ class StartWritingViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var startWritingView: UIView!
+    @IBOutlet weak var textField: UITextField!
     
     // Variables
     var startWritingViewOriginalCenter: CGPoint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textField.becomeFirstResponder()
 
 //        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
 //        swipeRight.direction = UISwipeGestureRecognizerDirection.right

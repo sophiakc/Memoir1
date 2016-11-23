@@ -235,6 +235,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                     <navigationItem key="navigationItem" id="pHq-db-hOu"/>
                     <connections>
                         <outlet property="startWritingView" destination="wad-nD-fOl" id="Ddq-Bu-iFD"/>
+                        <outlet property="textField" destination="xDb-7N-Zc5" id="9rB-56-afx"/>
                         <segue destination="iFm-fy-XB6" kind="modal" identifier="TodaySegue" id="AUs-mb-4EI"/>
                     </connections>
                 </viewController>
