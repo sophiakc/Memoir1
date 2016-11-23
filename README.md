@@ -101,7 +101,7 @@ Personal diary attached to my calendar, using Google calendar API and a native c
 
 ## Video Walkthrough
 
-![Memoir](memoir.gif)
+![Memoir](Memoir.gif)
 
 
 

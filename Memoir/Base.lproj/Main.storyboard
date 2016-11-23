@@ -279,9 +279,9 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ei6-tE-sHX">
-                                <frame key="frameInset" minX="143" minY="269" width="34" height="30"/>
+                                <frame key="frameInset" minX="118" minY="269" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Start writing"/>
                                 <connections>
                                     <segue destination="6GA-wT-QT7" kind="modal" animates="NO" id="5AA-mA-bpR"/>
                                 </connections>
