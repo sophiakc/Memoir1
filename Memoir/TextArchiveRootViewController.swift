@@ -2,7 +2,7 @@
 //  TextArchiveRootViewController.swift
 //  Memoir
 //
-//  Created by Sophia KC on 21/11/2016.
+//  Created by Sophia KC on 22/11/2016.
 //  Copyright © 2016 Sophia KC. All rights reserved.
 //
 
@@ -13,8 +13,10 @@ class TextArchiveRootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        performSegue(withIdentifier: "newtextSegue", sender: nil)
+
         
     }
+
 
 }
