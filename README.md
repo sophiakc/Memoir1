@@ -39,59 +39,62 @@ Personal diary attached to my calendar, using Google calendar API and a native c
 
 
 ### User Stories
-* [X] "Start Writing" View Controller (initial View Controller)
-    * [X] TextView to edit text - Sophia
-        * [ ] As a new user, I can UI Pan Gesture Left and see that I don't have any previous text entry (cf. Dropbox W1: http://courses.codepath.com/courses/ios_for_designers/unit/1#!assignment) - Sophia (ongoing)
+* [X] 1. "Start Writing" View Controller (initial View Controller)
+    * [X] No Text Yet to Start Writing - Sophia
+        * [X] As a new user, I see that I am going through "No Text Yet" and go straight to "Start Writing" - Sophia
+        * [X] As a new user, I can UI Pan Gesture Left and see that I don't have any previous text entry (cf. Dropbox W1: http://courses.codepath.com/courses/ios_for_designers/unit/1#!assignment) - Sophia
         * [ ] Reveal unlock icon + location and time button by following the toggle movement of keyboard
     
     * [X] UI Button for time and location - Sophia
         * [X] Push or Modal segue to Settings page and location enable popup - Sophia
-        * [ ] Settings: set up local time and location based on actual data
+        * [ ] Can dismiss the Settings page to go back
     
     * [ ] Unlock icon: 
         * [ ] Before performing Segue, when tapping on it, message pop up shows up: "Are you sure you have finished writing? You won't be able to edit this text again, it will be read only"
         * [ ] Save text somewhere in a database?? as the latest text
         * [X] Push or Modal segue to next screen - Monith
 
-* [ ] Animation from "Start Writing" to "Read Only" View Controller
+* [ ] 2. Animation from "Start Writing" to "Read Only" View Controller
     * [ ] transition animation with lock icon full screen, then go to read only text
     * [X] UIScrollView with no icon - Sophia
 
-* [ ] "Read Only" VC
+* [ ] 3. "Read Only" VC
     * [ ] Has a container view to coordinate all the previous text written or the "not yet text" screen if first user
     * [ ] Horizontal scroll left to see previous written texts from the most recent to the last recent
 
-* [ ] Animation from any "Read Only" VC to the corresponding "Today" VC
+* [ ] 4. Animation from any "Read Only" VC to the corresponding "Today" VC
     * [X] UI Pan Gesture down reveals "Today" VC - Namrata
     * [ ] The Read only text shrink into the Today small bubble view within the timeline - Namrata (ongoing)
     * [ ] The number in the big bubbles updates based on the actual number of words written
     * [ ] The number in the big bubbles updates based on the actual number of times a text has been written during the same day
 
-* [ ] "Today" View Controller
+* [ ] 5. "Today" View Controller
     * [ ] Vertical UIScrollView to bottom to see the different texts written per day in the timeline
     * [ ] Horizontal UIScrollView to left to see the text from the day before, and the day before..., one day = one screen
     * [ ] Horizontal UIScrollView to right go to a new "Start Writing" View Controller
     * [ ] Compute and store the number in the big bubbles (nb of words, nb of times)
  
-* [ ] Animation from "Today" VC to "This Week" VC
+* [ ] 6. Animation from "Today" VC to "This Week" VC
 	* [ ] UI Pan Gesture down goes to "This Week" VC
 	* [ ] The big bubbles from Today shrink into smaller bubbles on the Week timeline table
 
-* [ ] "This Week" View Controller
+* [ ] 7. "This Week" View Controller
     * [ ] Horizontal UIScrollView to see the different days of the month
     * [ ] Pan down to reveal search
     * [ ] from day to week view: shrink 7 columns into 1
     * [ ] from day to month view: shrink 30 columns into 1
     * [ ] from week to month view: shrink 4 columns into 1
 
-* [ ] Launch screen
+* [ ] 8.Settings
+    * [ ] Set up local time and location based on actual dataset up local time and location based on actual data
+    * [ ] see where else to give access to it?
+
+* [ ] 9. Launch screen
 	* [ ] add and animate logo
 
-* [ ] UIScrollView through the 3 onboarding screens
-
-* [ ] Page Settings: see where else to give access to it?
-
-
+* [ ] 10. Onboarding screens
+    * [ ] Explain how it works
+    * [ ] UIScrollView through the 3 onboarding screens
 
 
 

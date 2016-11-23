@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12786F931DE28AE600B2D778 /* MessageSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12786F921DE28AE600B2D778 /* MessageSendViewController.swift */; };
-		12786F951DE2911000B2D778 /* HomeTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12786F941DE2911000B2D778 /* HomeTransitionViewController.swift */; };
+		12786F951DE2911000B2D778 /* StartWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12786F941DE2911000B2D778 /* StartWritingViewController.swift */; };
 		12786F971DE29C0B00B2D778 /* FirstCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12786F961DE29C0B00B2D778 /* FirstCalendarViewController.swift */; };
 		12786F991DE29E9E00B2D778 /* CalendarWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12786F981DE29E9E00B2D778 /* CalendarWeekViewController.swift */; };
 		7E7FF3401DD739A0005B9CB2 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FF33D1DD739A0005B9CB2 /* BaseTransition.swift */; };
@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		12786F921DE28AE600B2D778 /* MessageSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSendViewController.swift; sourceTree = "<group>"; };
-		12786F941DE2911000B2D778 /* HomeTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTransitionViewController.swift; sourceTree = "<group>"; };
+		12786F941DE2911000B2D778 /* StartWritingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartWritingViewController.swift; sourceTree = "<group>"; };
 		12786F961DE29C0B00B2D778 /* FirstCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCalendarViewController.swift; sourceTree = "<group>"; };
 		12786F981DE29E9E00B2D778 /* CalendarWeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarWeekViewController.swift; sourceTree = "<group>"; };
 		7E7FF33D1DD739A0005B9CB2 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		7EDCF6791DCA7E2F00299844 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				12786F941DE2911000B2D778 /* HomeTransitionViewController.swift */,
+				12786F941DE2911000B2D778 /* StartWritingViewController.swift */,
 				933D85AE1DE4F78A0038662A /* ReadOnlyViewController.swift */,
 				12786F921DE28AE600B2D778 /* MessageSendViewController.swift */,
 				12786F961DE29C0B00B2D778 /* FirstCalendarViewController.swift */,
@@ -293,7 +293,7 @@
 			files = (
 				12786F931DE28AE600B2D778 /* MessageSendViewController.swift in Sources */,
 				7E7FF3411DD739A0005B9CB2 /* Common.swift in Sources */,
-				12786F951DE2911000B2D778 /* HomeTransitionViewController.swift in Sources */,
+				12786F951DE2911000B2D778 /* StartWritingViewController.swift in Sources */,
 				933D85AF1DE4F78A0038662A /* ReadOnlyViewController.swift in Sources */,
 				7E7FF3421DD739A0005B9CB2 /* FadeTransition.swift in Sources */,
 				12786F991DE29E9E00B2D778 /* CalendarWeekViewController.swift in Sources */,
