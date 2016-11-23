@@ -12,7 +12,9 @@ class StartWritingViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var startWritingView: UIView!
-    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var textField: UITextView!
+    
     
     // Variables
     var startWritingViewOriginalCenter: CGPoint!
