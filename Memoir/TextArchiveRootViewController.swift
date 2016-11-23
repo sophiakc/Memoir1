@@ -10,10 +10,19 @@ import UIKit
 
 class TextArchiveRootViewController: UIViewController {
 
+    // Outlets
+    @IBOutlet weak var containerScrollView: UIScrollView!
+    
+    // Variables
+    var noTextYetViewController: UIViewController!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         performSegue(withIdentifier: "newtextSegue", sender: nil)
+        
+        containerScrollView.contentSize = CGSize(width: containerScrollView.frame.size.width, height: containerScrollView.frame.size.height)
 
         
     }
