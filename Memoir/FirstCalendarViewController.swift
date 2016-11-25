@@ -10,8 +10,21 @@ import UIKit
 
 class FirstCalendarViewController: UIViewController {
 
+    @IBOutlet weak var postWords: UILabel!
+    @IBOutlet weak var postTimes: UILabel!
+    @IBOutlet weak var post1Text: UILabel!
+    
+    var post1TextContent: String!
+    var postWordsContent: Int!
+    var postTimesContent: Int!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       postWords.text = String(postWordsContent)
+        
+        postTimes.text = String(postTimesContent)
+        post1Text.text = post1TextContent
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right

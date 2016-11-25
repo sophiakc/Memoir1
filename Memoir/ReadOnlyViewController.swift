@@ -12,14 +12,22 @@ class ReadOnlyViewController: UIViewController {
 
     var fadeTransition: FadeTransition!
     
+
+    @IBOutlet weak var lockedTextField: UITextField!
+    var lockedText: String!
+    var wordCount: Int!
+    var postCount: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        lockedTextField.text = lockedText
 
         // Do any additional setup after loading the view.
     }
 
     @IBAction func didPanReadOnly(_ sender: UIPanGestureRecognizer) {
         performSegue(withIdentifier: "GoToFirstCalendarSegue", sender: nil)
+        print(lockedText)
         
     }
     
@@ -38,6 +46,9 @@ class ReadOnlyViewController: UIViewController {
         
         // Adjust the transition duration. (seconds)
         fadeTransition.duration = 1.0
+        firstcalendarViewController.post1TextContent = lockedText
+        firstcalendarViewController.postWordsContent = wordCount
+        firstcalendarViewController.postTimesContent = postCount
     }
     
     override func didReceiveMemoryWarning() {
