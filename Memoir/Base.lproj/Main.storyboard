@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="XAo-Qy-TcG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="P2g-DU-KQZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -80,70 +80,65 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                                 <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <view contentMode="scaleToFill" id="2hL-ZR-Dnw" userLabel="Container View">
-                                <frame key="frameInset" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="XdF-IP-Sui">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="XdF-IP-Sui" userLabel="Container Scroll View">
                                 <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="hGY-42-o5W" userLabel="Bubbles Container View">
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hGY-42-o5W" userLabel="Bubbles Container View">
                                         <rect key="frame" x="0.0" y="77" width="320" height="205"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gZj-dm-732">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gZj-dm-732">
                                         <rect key="frame" x="88" y="26" width="145" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How many" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Q0-uh-X7N">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Q0-uh-X7N">
                                         <rect key="frame" x="60" y="83" width="90" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-lg" id="MPN-m1-Rnb" userLabel="Bubble Word View">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-lg" id="xcb-XK-8Ix" userLabel="Bubble Word View">
                                         <rect key="frame" x="36" y="104" width="138" height="138"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="567" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TfD-rk-k9C">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="567" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TfD-rk-k9C">
                                         <rect key="frame" x="36" y="133" width="138" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ESr-Rd-5PI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ESr-Rd-5PI">
                                         <rect key="frame" x="36" y="186" width="138" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How often" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K8z-E8-FyN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K8z-E8-FyN">
                                         <rect key="frame" x="202" y="151" width="90" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-sm" id="khv-ce-VcJ" userLabel="Bubble Time View">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse-sm" id="khv-ce-VcJ" userLabel="Bubble Time View">
                                         <rect key="frame" x="202" y="173" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Of-g7-sGa">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Of-g7-sGa">
                                         <rect key="frame" x="202" y="189" width="90" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YyS-4J-HSg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YyS-4J-HSg">
                                         <rect key="frame" x="202" y="225" width="90" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -151,6 +146,10 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sOc-Fq-oC1" appends="YES" id="G4B-oV-hr2"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -158,14 +157,19 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                     <connections>
                         <outlet property="backgroundView" destination="ms1-EI-Lap" id="Xqc-EX-DzT"/>
                         <outlet property="bubbleTimeView" destination="khv-ce-VcJ" id="maU-La-PCU"/>
-                        <outlet property="bubbleWordView" destination="MPN-m1-Rnb" id="VD8-un-ibK"/>
+                        <outlet property="bubbleWordView" destination="xcb-XK-8Ix" id="SGU-Dr-nWL"/>
                         <outlet property="bubblesContainerView" destination="hGY-42-o5W" id="aK8-bj-2mA"/>
-                        <outlet property="scrollView" destination="XdF-IP-Sui" id="XDO-0E-W5Z"/>
+                        <outlet property="containerScrollView" destination="XdF-IP-Sui" id="mhq-XB-8C9"/>
                         <segue destination="P2g-DU-KQZ" kind="modal" identifier="WeekSegue" id="85t-0v-RLq"/>
                         <segue destination="CHb-hi-GFR" kind="modal" identifier="BackHomeSegue" modalTransitionStyle="crossDissolve" id="xj7-a1-taU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jao-NW-XJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sOc-Fq-oC1">
+                    <connections>
+                        <action selector="didPan:" destination="iFm-fy-XB6" id="Z4B-S2-tki"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="243" y="-403"/>
         </scene>
@@ -178,7 +182,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="0cl-KH-SVM">
-                                <frame key="frameInset" height="44"/>
+                                <frame key="frameInset" height="44" maxX="1"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Settings" id="s6a-Sw-DGl"/>
@@ -352,36 +356,40 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-lg" id="FSU-aV-Ghh" userLabel="ellipse-lg-10">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-lg" id="FSU-aV-Ghh" userLabel="Bubble Word View 10">
                                         <rect key="frame" x="239" y="69" width="53" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="l0v-Aa-hB4" appends="YES" id="thS-Fs-p01"/>
-                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-sm" id="sGL-Ve-e0l" userLabel="ellipse-sm-10">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-sm" id="sGL-Ve-e0l" userLabel="Bubble Time View 10">
                                         <rect key="frame" x="256" y="141" width="19" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="k4J-Dj-RAI" appends="YES" id="8Af-Fp-Qx1"/>
-                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-lg" id="0qe-DB-nAH" userLabel="ellipse-lg-9">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-lg" id="0qe-DB-nAH" userLabel="Bubble Word View 9">
                                         <rect key="frame" x="189" y="75" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="TKw-uU-Nci" appends="YES" id="Xmq-XX-Nko"/>
-                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-sm" id="Ih6-c8-u7v" userLabel="ellipse-sm-9">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-sm" id="Ih6-c8-u7v" userLabel="Bubble Time View 9">
                                         <rect key="frame" x="194" y="135" width="31" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="tI5-3t-Zcb" userLabel="Column 10">
+                                        <rect key="frame" x="234" y="62" width="87" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="KQa-CT-Xd4" appends="YES" id="9jO-M2-sUz"/>
+                                            <outletCollection property="gestureRecognizers" destination="f7F-Mb-5Om" appends="YES" id="Rpf-CM-wFi"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="Ama-3C-Nch" userLabel="Column 9">
+                                        <rect key="frame" x="180" y="62" width="55" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="t5r-DH-ENe" appends="YES" id="Wzd-85-N1f"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
@@ -392,32 +400,20 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                     <connections>
                         <outlet property="imageView" destination="cgp-Em-zk5" id="LcR-Mr-5ro"/>
                         <outlet property="scrollView" destination="4He-46-iYI" id="4Ou-3f-inH"/>
-                        <outletCollection property="images" destination="FSU-aV-Ghh" collectionClass="NSMutableArray" id="Oug-NQ-6pr"/>
-                        <outletCollection property="images" destination="sGL-Ve-e0l" collectionClass="NSMutableArray" id="0zI-M4-v6r"/>
-                        <outletCollection property="images" destination="0qe-DB-nAH" collectionClass="NSMutableArray" id="rzA-7P-QZp"/>
-                        <outletCollection property="images" destination="Ih6-c8-u7v" collectionClass="NSMutableArray" id="yOC-SM-3nk"/>
+                        <outletCollection property="columns" destination="tI5-3t-Zcb" collectionClass="NSMutableArray" id="oK1-xb-hPl"/>
+                        <outletCollection property="columns" destination="Ama-3C-Nch" collectionClass="NSMutableArray" id="4aS-aO-ZaR"/>
                         <segue destination="iFm-fy-XB6" kind="modal" identifier="DayViewSegue" modalTransitionStyle="crossDissolve" id="b8i-8K-1yh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTg-bg-QAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="l0v-Aa-hB4">
+                <tapGestureRecognizer id="f7F-Mb-5Om">
                     <connections>
-                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="o5H-2P-lFr"/>
+                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="eNT-1D-CZf"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="k4J-Dj-RAI">
+                <tapGestureRecognizer id="t5r-DH-ENe">
                     <connections>
-                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="qjV-pr-8SQ"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="TKw-uU-Nci">
-                    <connections>
-                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="ybE-WV-Fhc"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="KQa-CT-Xd4">
-                    <connections>
-                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="Buj-ks-ybi"/>
+                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="vLB-4y-eju"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -509,7 +505,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
         <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="P8r-ow-QGt"/>
-        <segue reference="AUs-mb-4EI"/>
+        <segue reference="xj7-a1-taU"/>
+        <segue reference="b8i-8K-1yh"/>
     </inferredMetricsTieBreakers>
 </document>

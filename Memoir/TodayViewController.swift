@@ -9,11 +9,11 @@
 
 import UIKit
 
-class TodayViewController: UIViewController {
+class TodayViewController: UIViewController, UIScrollViewDelegate {
     
     // Outlets
     @IBOutlet var backgroundView: UIView!
-        @IBOutlet weak var scrollView: UIScrollView!
+        @IBOutlet weak var containerScrollView: UIScrollView!
             @IBOutlet weak var bubblesContainerView: UIImageView!
     
                 @IBOutlet weak var bubbleWordView: UIImageView!
@@ -23,13 +23,13 @@ class TodayViewController: UIViewController {
     
     // Variables
     // Prepare for segue from CalendarWeek VC
-    var bubble: UIImage!
+    var column: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bubbleWordView.bubble = bubble
-        scrollView.delegate = self
+        bubblesContainerView.image = column
+        containerScrollView.delegate = self
         
         
         // reminder: deal with the UIScroll 
@@ -52,6 +52,28 @@ class TodayViewController: UIViewController {
         
         
     }
+    
+    
+    @IBAction func didPan(_ sender: UIPanGestureRecognizer) {
+        
+        let translation = sender.translation(in: view)
+        let velocity = sender.velocity(in: view)
+        let location = sender.location(in: view)
+        
+        if sender.state == .began {
+            print("Gesture began")
+            dismiss(animated: true, completion: nil)
+            
+        } else if sender.state == .changed {
+            
+        } else if sender.state == .ended {
+            
+        }
+        
+    }
+    
+    
+    
 
     
     

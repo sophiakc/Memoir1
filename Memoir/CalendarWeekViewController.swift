@@ -14,7 +14,7 @@ class CalendarWeekViewController: UIViewController {
     // Outlets
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet var bubbles: [UIImageView]!
+    @IBOutlet var columns: [UIImageView]!
     
     
     // Variables
@@ -27,13 +27,16 @@ class CalendarWeekViewController: UIViewController {
         super.viewDidLoad()
         
         // Configure the content size of the scroll view
-        scrollView.contentSize = CGSize(width: imageView.image!.size.width, height: 230)
+        // TODO: don't hard code, instead use formula based on actual content
+//        scrollView.contentSize = CGSize(width: imageView.image!.size.width, height: 230)
+        scrollView.contentSize = CGSize(width: 320, height: 230)
         
         
-        for bubble in bubbles {
+        
+        for column in columns {
             let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapColumn))
             
-            bubble.addGestureRecognizer(tapRecognizer)
+            column.addGestureRecognizer(tapRecognizer)
         }
         
         
