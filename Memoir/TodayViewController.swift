@@ -1,44 +1,39 @@
 //
-//  CalendarWeekViewController.swift
+//  TodayViewController.swift
 //  Memoir
 //
 //  Created by Monith Ilavarasan on 11/20/16.
-//  Modified by Sophia Kecir Camper on 11/27/2016.
+//  Modified by Sophia Kecir Camper on 11/27/2016: initial title "FirstCalendarViewController.swift"
 //  Copyright © 2016 Memoir All rights reserved.
 //
 
 import UIKit
 
-class CalendarWeekViewController: UIViewController {
+class TodayViewController: UIViewController, UIScrollViewDelegate {
     
     // Outlets
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet var columns: [UIImageView]!
+    @IBOutlet var backgroundView: UIView!
+        @IBOutlet weak var containerScrollView: UIScrollView!
+            @IBOutlet weak var imageView: UIImageView!
+            @IBOutlet weak var bubblesContainerView: UIImageView!
+    
+                @IBOutlet weak var bubbleWordView: UIImageView!
+    
+                @IBOutlet weak var bubbleTimeView: UIImageView!
     
     
     // Variables
-    var todayViewController: TodayViewController!
-    var selectedColumn: UIImageView!
-    var tapTransition: TapTransition!
-    
+    // Prepare for segue from CalendarWeek VC
+    var column: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bubblesContainerView.image = column
+        containerScrollView.delegate = self
+        
         // Configure the content size of the scroll view
-        scrollView.contentSize = CGSize(width: imageView.frame.size.width, height: 230)
-        
-        
-        
-        for column in columns {
-            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapColumn))
-            
-            column.addGestureRecognizer(tapRecognizer)
-        }
-        
-        
-        
+        containerScrollView.contentSize = CGSize(width: 320, height: imageView.frame.size.height)
         
         
 //        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
@@ -56,15 +51,30 @@ class CalendarWeekViewController: UIViewController {
 //        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
 //        swipeUp.direction = UISwipeGestureRecognizerDirection.up
 //        self.view.addGestureRecognizer(swipeUp)
-
+        
         
     }
     
     
-    @IBAction func didTapColumn(_ sender: UITapGestureRecognizer) {
-        selectedColumn = sender.view as! UIImageView
-        performSegue(withIdentifier: "DayViewSegue", sender: nil)
+    @IBAction func didPan(_ sender: UIPanGestureRecognizer) {
+        
+        let translation = sender.translation(in: view)
+        let velocity = sender.velocity(in: view)
+        let location = sender.location(in: view)
+        
+        if sender.state == .began {
+            print("Gesture began")
+            dismiss(animated: true, completion: nil)
+            
+        } else if sender.state == .changed {
+            
+        } else if sender.state == .ended {
+            
+        }
+        
     }
+    
+    
     
 
     
@@ -76,16 +86,18 @@ class CalendarWeekViewController: UIViewController {
 //                print("Swiped right")
 //            case UISwipeGestureRecognizerDirection.down:
 //                print("Swiped down")
-//                performSegue(withIdentifier: "DayViewSegue", sender: UISwipeGestureRecognizerDirection.down)
+//                performSegue(withIdentifier: "BackHomeSegue", sender: UISwipeGestureRecognizerDirection.down)
 //            case UISwipeGestureRecognizerDirection.left:
 //                print("Swiped left")
 //            case UISwipeGestureRecognizerDirection.up:
 //                print("Swiped up")
+//                performSegue(withIdentifier: "WeekSegue", sender: UISwipeGestureRecognizerDirection.up)
 //            default:
 //                break
 //            }
 //        }
 //    }
-    
+
+
 
 }
