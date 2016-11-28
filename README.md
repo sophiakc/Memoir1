@@ -62,7 +62,11 @@ Personal diary attached to my calendar, using Google calendar API and a native c
 * [ ] 2. Animation from "Start Writing" to "Read Only" View Controller
     * [ ] transition animation with lock icon full screen, then go to read only text
     * [X] UIScrollView with no icon - Sophia
+<<<<<<< HEAD
     * [X] Pass text, word count and post count data to read and home screens - Namrata
+=======
+    * [ ] The notesText saved/stored in local app array/single user mode(not on network/multiple user) using NSdefaults and passed to Read VC from HomeVC- Namrata (ongoing)
+>>>>>>> 3c70f10fd8f50b5d38bb7b0543d464aefb27cef2
 
 * [ ] 3. "Read Only" VC
     * [ ] Has a container view to coordinate all the previous text written or the "not yet text" screen if first user
@@ -71,15 +75,27 @@ Personal diary attached to my calendar, using Google calendar API and a native c
 
 * [ ] 4. Animation from any "Read Only" VC to the corresponding "Today" VC
     * [X] UI Pan Gesture down reveals "Today" VC - Namrata
+    * [ ] The Read only text saved/stored in local app array/single user mode(not on network/multiple user) using NSdefaults - Namrata (ongoing)
     * [ ] The Read only text shrink into the Today small bubble view within the timeline - Namrata (ongoing)
+<<<<<<< HEAD
     * [X] The number in the big bubbles updates based on the actual number of words written
     * [X] The number in the big bubbles updates based on the actual number of times a text has been written during the same day
+=======
+    * [X] The number in the big bubbles updates based on the actual number of words written - Namrata
+    * [X] The number in the big bubbles updates based on the actual number of times a text has been written during the same day - Namrata
+>>>>>>> 3c70f10fd8f50b5d38bb7b0543d464aefb27cef2
 
 * [ ] 5. "Today" View Controller
     * [ ] Vertical UIScrollView to bottom to see the different texts written per day in the timeline
     * [ ] Horizontal UIScrollView to left to see the text from the day before, and the day before..., one day = one screen
     * [ ] Horizontal UIScrollView to right go to a new "Start Writing" View Controller
+<<<<<<< HEAD
     * [X] Compute and store the number in the big bubbles (nb of words, nb of times)
+=======
+    * [X ] Add TableViewController and cell and text label for NotesText list/array - Namrata
+    * [X] Compute and store the number in the big bubbles (nb of words, nb of times) - Namrata
+    * [ ] Get stored notesText from ReadVC and HomeVC using NSdefaults - Namrata (ongoing)
+>>>>>>> 3c70f10fd8f50b5d38bb7b0543d464aefb27cef2
  
 * [ ] 6. Animation from "Today" VC to "This Week" VC
 	* [ ] UI Pan Gesture down goes to "This Week" VC

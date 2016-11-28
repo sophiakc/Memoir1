@@ -8,9 +8,14 @@
 
 import UIKit
 
+<<<<<<< HEAD
 class StartWritingViewController: UIViewController, UITextViewDelegate {
     
      var fadeTransition: FadeTransition!
+=======
+class StartWritingViewController: UIViewController {
+    
+>>>>>>> 3c70f10fd8f50b5d38bb7b0543d464aefb27cef2
     // Outlets
     @IBOutlet weak var startWritingView: UIView!
     
@@ -20,10 +25,14 @@ class StartWritingViewController: UIViewController, UITextViewDelegate {
     // Variables
 //    var startWritingViewOriginalCenter: CGPoint!
     
+<<<<<<< HEAD
     var textEntered: String!
     var currentCharacterCount: Int!
     var originalPostCount: Int!
     var newPostCount: Int!
+=======
+    
+>>>>>>> 3c70f10fd8f50b5d38bb7b0543d464aefb27cef2
     
 
     override func viewDidLoad() {
@@ -31,12 +40,15 @@ class StartWritingViewController: UIViewController, UITextViewDelegate {
         
         textField.textContainerInset = UIEdgeInsetsMake(24, 4, 0, 2)
         textField.becomeFirstResponder()
+<<<<<<< HEAD
         textField.delegate = self
         
 
         originalPostCount = 0
         
 
+=======
+>>>>>>> 3c70f10fd8f50b5d38bb7b0543d464aefb27cef2
         
 
 //        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
@@ -96,6 +108,7 @@ class StartWritingViewController: UIViewController, UITextViewDelegate {
     
         
     }
+<<<<<<< HEAD
    
     func textViewDidEndEditing(_ textView: UITextView) {
         textEntered = textField.text
@@ -137,6 +150,10 @@ class StartWritingViewController: UIViewController, UITextViewDelegate {
     }
 
 //
+=======
+    
+//    
+>>>>>>> 3c70f10fd8f50b5d38bb7b0543d464aefb27cef2
 //    // UIAlertConroller when click unlock icon
 //
 //    let alertController = UIAlertController(title: "Lock editing", message: "Are you sure you're done writing?", preferredStyle: .actionSheet)
