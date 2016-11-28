@@ -14,6 +14,7 @@ class TodayViewController: UIViewController, UIScrollViewDelegate {
     // Outlets
     @IBOutlet var backgroundView: UIView!
         @IBOutlet weak var containerScrollView: UIScrollView!
+            @IBOutlet weak var imageView: UIImageView!
             @IBOutlet weak var bubblesContainerView: UIImageView!
     
                 @IBOutlet weak var bubbleWordView: UIImageView!
@@ -31,8 +32,9 @@ class TodayViewController: UIViewController, UIScrollViewDelegate {
         bubblesContainerView.image = column
         containerScrollView.delegate = self
         
+        // Configure the content size of the scroll view
+        containerScrollView.contentSize = CGSize(width: 320, height: imageView.frame.size.height)
         
-        // reminder: deal with the UIScroll 
         
 //        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
 //        swipeRight.direction = UISwipeGestureRecognizerDirection.right

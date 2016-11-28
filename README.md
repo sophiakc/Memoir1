@@ -37,6 +37,9 @@ Personal diary attached to my calendar, using Google calendar API and a native c
 ![Calendar view](W4 Group - Memoir app mockup 6.4 Calendar view.png)
 ![Calendar event detailed view](W4 Group - Memoir app mockup 6.5 Calendar view.png)
 
+### Animation suggestion
+
+![Animation idea](animationidea.jpg)
 
 
 ### User Stories
@@ -62,6 +65,9 @@ Personal diary attached to my calendar, using Google calendar API and a native c
 * [ ] 2. Animation from "Start Writing" to "Read Only" View Controller
     * [ ] transition animation with lock icon full screen, then go to read only text
     * [X] UIScrollView with no icon - Sophia
+    * [ ] Add opacity 0,5 icon (cf. ![Animation idea](animationidea.jpg))
+    	* [ ] to go to previous text
+    	* [ ] to go to new text
 
 * [ ] 3. "Read Only" VC
     * [ ] Has a container view to coordinate all the previous text written or the "not yet text" screen if first user
@@ -73,33 +79,56 @@ Personal diary attached to my calendar, using Google calendar API and a native c
     * [ ] The number in the big bubbles updates based on the actual number of words written
     * [ ] The number in the big bubbles updates based on the actual number of times a text has been written during the same day
 
-* [ ] 5. "Today" View Controller
-    * [ ] Vertical UIScrollView to bottom to see the different texts written per day in the timeline
+* [ ] 5. "Today" View Controller - Sophia (ongoing 11/27/2016)
+    * [ ] Vertical UIScrollView to bottom to see the different texts written per day in the timeline - Sophia (ongoing 11/27/2016)
     * [ ] Horizontal UIScrollView to left to see the text from the day before, and the day before..., one day = one screen
     * [ ] Horizontal UIScrollView to right go to a new "Start Writing" View Controller
     * [ ] Compute and store the number in the big bubbles (nb of words, nb of times)
  
-* [ ] 6. Animation from "Today" VC to "This Week" VC
-	* [ ] UI Pan Gesture down goes to "This Week" VC
-	* [ ] The big bubbles from Today shrink into smaller bubbles on the Week timeline table
-
-* [ ] 7. "This Week" View Controller
-    * [ ] Horizontal UIScrollView to see the different days of the month
-    * [ ] Pan down to reveal search
-    * [ ] from day to week view: shrink 7 columns into 1
+* [ ] 6. Animation from "Today" VC to "This Week" VC - Sophia (ongoing 11/27/2016)
+	* [X] UI Pan Gesture down goes to "This Week" VC - Sophia (done 11/27/2016)
+		* [ ] Add animation to reveal background when start panning down - IMPORTANT
+	* [ ] The big bubbles from Today shrink and move into smaller bubbles on the CalendarWeek View - Sophia (ongoing 11/27/2016) 
+	* [ ] The big bubbles from CalendarWeek get bigger to reach the position in the Today View - Sophia (ongoing 11/27/2016) 
+	* [ ] The big bubbles are related to the corresponding day - IMPORTANT
+	
+* [ ] 7. "This Week" View Controller - Sophia (ongoing 11/27/2016)
+	* [X] Horizontal UIScrollView to see the different days of the month - Sophia (done 11/27/2016)
+    * [X] Taping the last column (corresponding to today) goes to the corresponding Today View - Sophia (done 11/27/2016)
+    * [ ] Taping any column goes to the corresponding Day View - IMPORTANT
+    * [ ] from day to week view: shrink 7 columns into 1 - IMPORTANT
+    Optional:
     * [ ] from day to month view: shrink 30 columns into 1
     * [ ] from week to month view: shrink 4 columns into 1
+    * [ ] Pan down to reveal search
 
-* [ ] 8.Settings
+* [ ] 8. Sign in screens
+	* [ ] Sign in with Google connect
+	* [ ] Create new account
+	* [ ] Sign in with existing account
+
+* [ ] 9. Save text as an event in Google Calendar
+
+* [ ] 10. Onboarding screens
+    * [ ] Explain how it works, include: privacy, gestures, how it works
+    * [ ] UIScrollView through the 3 onboarding screens
+
+* [ ] 11. Launch screen
+	* [ ] add a real logo
+
+* [ ] 12.Settings
     * [ ] Set up local time and location based on actual dataset up local time and location based on actual data
     * [ ] see where else to give access to it?
 
-* [ ] 9. Launch screen
-	* [ ] add and animate logo
+* [ ] 13. Launch in the appstore
 
-* [ ] 10. Onboarding screens
-    * [ ] Explain how it works
-    * [ ] UIScrollView through the 3 onboarding screens
+* [ ] 14. Launch a landing page
+
+
+
+
+
+
 
 
 
