@@ -28,8 +28,8 @@ class CalendarWeekViewController: UIViewController {
         
         // Configure the content size of the scroll view
         // TODO: don't hard code, instead use formula based on actual content
-//        scrollView.contentSize = CGSize(width: imageView.image!.size.width, height: 230)
-        scrollView.contentSize = CGSize(width: 320, height: 230)
+        scrollView.contentSize = CGSize(width: imageView.frame.size.width, height: 230)
+//        scrollView.contentSize = CGSize(width: 320, height: 230)
         
         
         
