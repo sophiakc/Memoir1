@@ -3,7 +3,7 @@
 //  Memoir
 //
 //  Created by Sophia KC on 22/11/2016.
-//  Copyright © 2016 Sophia KC. All rights reserved.
+//  Copyright © 2016 Memoir All rights reserved.
 //
 
 import UIKit

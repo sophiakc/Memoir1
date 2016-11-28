@@ -56,7 +56,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                         </connections>
                     </view>
                     <connections>
-                        <segue destination="iFm-fy-XB6" kind="modal" identifier="GoToFirstCalendarSegue" id="hjH-SR-Zfl"/>
+                        <segue destination="iFm-fy-XB6" kind="modal" identifier="GoToTodayViewSegue" id="hjH-SR-Zfl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,61 +68,106 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
             </objects>
             <point key="canvasLocation" x="943" y="386"/>
         </scene>
-        <!--Message Send View Controller-->
-        <scene sceneID="UkS-qO-auF">
-            <objects>
-                <viewController id="mAS-gl-1pr" customClass="MessageSendViewController" customModule="Memoir" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iTH-DD-ZAW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" misplaced="YES" image="4.3 Writing view" id="ULW-fY-Mu8">
-                                <frame key="frameInset" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="0Kt-f2-zfN" appends="YES" id="Uwj-rV-BlA"/>
-                                </connections>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <segue destination="CHb-hi-GFR" kind="modal" identifier="MessageSendSegue" modalTransitionStyle="partialCurl" id="fjp-C2-60Z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYY-Tw-vjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="0Kt-f2-zfN">
-                    <connections>
-                        <action selector="MessageEndSwipe:" destination="mAS-gl-1pr" id="oXu-29-26J"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="2820" y="305"/>
-        </scene>
-        <!--First Calendar View Controller-->
+        <!--Today View Controller-->
         <scene sceneID="tRw-qP-Q9D">
             <objects>
-                <viewController id="iFm-fy-XB6" customClass="FirstCalendarViewController" customModule="Memoir" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ms1-EI-Lap">
+                <viewController id="iFm-fy-XB6" userLabel="Today View Controller" customClass="TodayViewController" customModule="Memoir" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ms1-EI-Lap" userLabel="Background View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="5. Today view" id="oVT-n1-GGe">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleAspectFill" misplaced="YES" image="5. Today view" id="oVT-n1-GGe">
                                 <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="2hL-ZR-Dnw" userLabel="Container View">
+                                <frame key="frameInset" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="XdF-IP-Sui">
+                                <frame key="frameInset" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="hGY-42-o5W" userLabel="Bubbles Container View">
+                                        <rect key="frame" x="0.0" y="77" width="320" height="205"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gZj-dm-732">
+                                        <rect key="frame" x="88" y="26" width="145" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How many" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Q0-uh-X7N">
+                                        <rect key="frame" x="60" y="83" width="90" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-lg" id="MPN-m1-Rnb" userLabel="Bubble Word View">
+                                        <rect key="frame" x="36" y="104" width="138" height="138"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="567" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TfD-rk-k9C">
+                                        <rect key="frame" x="36" y="133" width="138" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ESr-Rd-5PI">
+                                        <rect key="frame" x="36" y="186" width="138" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How often" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K8z-E8-FyN">
+                                        <rect key="frame" x="202" y="151" width="90" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-sm" id="khv-ce-VcJ" userLabel="Bubble Time View">
+                                        <rect key="frame" x="202" y="173" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Of-g7-sGa">
+                                        <rect key="frame" x="202" y="189" width="90" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YyS-4J-HSg">
+                                        <rect key="frame" x="202" y="225" width="90" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="ms1-EI-Lap" id="Xqc-EX-DzT"/>
+                        <outlet property="bubbleTimeView" destination="khv-ce-VcJ" id="maU-La-PCU"/>
+                        <outlet property="bubbleWordView" destination="MPN-m1-Rnb" id="VD8-un-ibK"/>
+                        <outlet property="bubblesContainerView" destination="hGY-42-o5W" id="aK8-bj-2mA"/>
+                        <outlet property="scrollView" destination="XdF-IP-Sui" id="XDO-0E-W5Z"/>
                         <segue destination="P2g-DU-KQZ" kind="modal" identifier="WeekSegue" id="85t-0v-RLq"/>
                         <segue destination="CHb-hi-GFR" kind="modal" identifier="BackHomeSegue" modalTransitionStyle="crossDissolve" id="xj7-a1-taU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jao-NW-XJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="382" y="-403"/>
+            <point key="canvasLocation" x="243" y="-403"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="foe-f0-cNW">
@@ -261,14 +306,120 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                                 <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="November 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QoX-ll-J9B">
+                                <frame key="frameInset" minX="19" minY="73" width="283" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="uVZ-Wf-nbR">
+                                <frame key="frameInset" minX="73" minY="420" width="215" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Days"/>
+                                    <segment title="Weeks"/>
+                                    <segment title="Months"/>
+                                </segments>
+                                <color key="tintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dz4-XX-6Sc">
+                                <frame key="frameInset" minX="16" minY="422" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="4He-46-iYI">
+                                <frame key="frameInset" minY="169" width="320" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="cgp-Em-zk5">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="THU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L28-qD-jJa">
+                                        <rect key="frame" x="250" y="25" width="35" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sMe-2z-qPq">
+                                        <rect key="frame" x="250" y="40" width="35" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-lg" id="FSU-aV-Ghh" userLabel="ellipse-lg-10">
+                                        <rect key="frame" x="239" y="69" width="53" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="l0v-Aa-hB4" appends="YES" id="thS-Fs-p01"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-sm" id="sGL-Ve-e0l" userLabel="ellipse-sm-10">
+                                        <rect key="frame" x="256" y="141" width="19" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="k4J-Dj-RAI" appends="YES" id="8Af-Fp-Qx1"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-lg" id="0qe-DB-nAH" userLabel="ellipse-lg-9">
+                                        <rect key="frame" x="189" y="75" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="TKw-uU-Nci" appends="YES" id="Xmq-XX-Nko"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ellipse-sm" id="Ih6-c8-u7v" userLabel="ellipse-sm-9">
+                                        <rect key="frame" x="194" y="135" width="31" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="KQa-CT-Xd4" appends="YES" id="9jO-M2-sUz"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="cgp-Em-zk5" id="LcR-Mr-5ro"/>
+                        <outlet property="scrollView" destination="4He-46-iYI" id="4Ou-3f-inH"/>
+                        <outletCollection property="images" destination="FSU-aV-Ghh" collectionClass="NSMutableArray" id="Oug-NQ-6pr"/>
+                        <outletCollection property="images" destination="sGL-Ve-e0l" collectionClass="NSMutableArray" id="0zI-M4-v6r"/>
+                        <outletCollection property="images" destination="0qe-DB-nAH" collectionClass="NSMutableArray" id="rzA-7P-QZp"/>
+                        <outletCollection property="images" destination="Ih6-c8-u7v" collectionClass="NSMutableArray" id="yOC-SM-3nk"/>
                         <segue destination="iFm-fy-XB6" kind="modal" identifier="DayViewSegue" modalTransitionStyle="crossDissolve" id="b8i-8K-1yh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTg-bg-QAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="l0v-Aa-hB4">
+                    <connections>
+                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="o5H-2P-lFr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="k4J-Dj-RAI">
+                    <connections>
+                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="qjV-pr-8SQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="TKw-uU-Nci">
+                    <connections>
+                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="ybE-WV-Fhc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KQa-CT-Xd4">
+                    <connections>
+                        <action selector="didTapColumn:" destination="P2g-DU-KQZ" id="Buj-ks-ybi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="382" y="-1247"/>
         </scene>
@@ -321,7 +472,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ey-Ki-lJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-94" y="1107"/>
+            <point key="canvasLocation" x="-95" y="1280"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GSI-1I-hsQ">
@@ -344,9 +495,10 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
         </scene>
     </scenes>
     <resources>
-        <image name="4.3 Writing view" width="289" height="511"/>
         <image name="5. Today view" width="301" height="533"/>
         <image name="6.1 Week view" width="328" height="582"/>
+        <image name="ellipse-lg" width="1841" height="1842"/>
+        <image name="ellipse-sm" width="1138" height="1138"/>
         <image name="lock" width="246" height="399"/>
         <image name="notextyet" width="316" height="475"/>
         <image name="unlock" width="123" height="144"/>

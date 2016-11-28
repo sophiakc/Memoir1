@@ -3,7 +3,8 @@
 //  Memoir
 //
 //  Created by Monith Ilavarasan on 11/20/16.
-//  Copyright © 2016 Sophia KC. All rights reserved.
+//  Modified by Sophia Kecir Camper on 11/22/2016: initial title "HomeTransitionViewController.swift"
+//  Copyright © 2016 Memoir All rights reserved.
 //
 
 import UIKit
