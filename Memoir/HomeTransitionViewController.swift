@@ -1,5 +1,5 @@
 //
-//  FirstCalendarViewController.swift
+//  HomeTransitionViewController.swift
 //  Memoir
 //
 //  Created by Monith Ilavarasan on 11/20/16.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class FirstCalendarViewController: UIViewController {
+class HomeTransitionViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
@@ -30,8 +32,6 @@ class FirstCalendarViewController: UIViewController {
         self.view.addGestureRecognizer(swipeUp)
         
         // Do any additional setup after loading the view.
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,28 +46,16 @@ class FirstCalendarViewController: UIViewController {
                 print("Swiped right")
             case UISwipeGestureRecognizerDirection.down:
                 print("Swiped down")
-                performSegue(withIdentifier: "BackHomeSegue", sender: UISwipeGestureRecognizerDirection.down)
             case UISwipeGestureRecognizerDirection.left:
                 print("Swiped left")
             case UISwipeGestureRecognizerDirection.up:
                 print("Swiped up")
-                performSegue(withIdentifier: "WeekSegue", sender: UISwipeGestureRecognizerDirection.up)
+                performSegue(withIdentifier: "TodaySegue", sender: UISwipeGestureRecognizerDirection.up)
             default:
                 break
             }
         }
     }
-
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
