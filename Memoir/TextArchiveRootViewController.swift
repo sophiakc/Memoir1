@@ -15,6 +15,7 @@ class TextArchiveRootViewController: UIViewController {
     
     // Variables
     var noTextYetViewController: UIViewController!
+    var readOnlyViewController: UIViewController!
     
     
     override func viewDidLoad() {
@@ -23,12 +24,20 @@ class TextArchiveRootViewController: UIViewController {
         
         let main = UIStoryboard(name: "Main", bundle: nil)
         
-        noTextYetViewController = main.instantiateViewController(withIdentifier: "NoTextYetViewController")
-        containerView.addSubview(noTextYetViewController.view)
-//        noTextYetViewController.view.frame = containerView.bounds
-//        noTextYetViewController.view.frame.origin.x = containerView.frame.size.width
+//        // when launching the app, go directly to new note
+//            // 1. As a new user, no text written yet
+//        noTextYetViewController = main.instantiateViewController(withIdentifier: "NoTextYetViewController")
+//        containerView.addSubview(noTextYetViewController.view)
+////        noTextYetViewController.view.frame = containerView.bounds
+////        noTextYetViewController.view.frame.origin.x = containerView.frame.size.width
+//        
+//        performSegue(withIdentifier: "newtextSegue", sender: nil)
+//        
+//        
+            // 2. As an existing user
+        readOnlyViewController = main.instantiateViewController(withIdentifier: "ReadOnlyViewController")
+        containerView.addSubview(readOnlyViewController.view)
         
-
         performSegue(withIdentifier: "newtextSegue", sender: nil)
     }
     

@@ -10,7 +10,14 @@ import UIKit
 
 class ReadOnlyViewController: UIViewController {
 
+    // Variables
     var fadeTransition: FadeTransition!
+    
+    // Prepare for segue from CalendarWeek VC
+//    var snippet: UILabel!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
