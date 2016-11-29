@@ -37,6 +37,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4s8-WF-y5D" userLabel="Lock Button">
                                         <frame key="frameInset" minX="250" minY="247" width="63" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="sendTextButton:" destination="0t1-Fo-ZGZ" eventType="touchUpInside" id="mq6-fw-7i5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG8-kh-BrB" userLabel="Time Location Button">
                                         <frame key="frameInset" minX="-1" minY="291" width="322" height="30"/>
