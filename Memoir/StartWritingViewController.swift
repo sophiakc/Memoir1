@@ -88,6 +88,13 @@ class StartWritingViewController: UIViewController {
         
     }
     
+    @IBAction func sendTextButton(_ sender: UIButton) {
+        // Pop the push, but should we performSegue(withIdentifier) instead?
+        navigationController!.popViewController(animated: true)
+    }
+    
+    
+    
 //    
 //    // UIAlertConroller when click unlock icon
 //

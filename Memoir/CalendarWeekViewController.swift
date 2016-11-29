@@ -14,7 +14,8 @@ class CalendarWeekViewController: UIViewController {
     // Outlets
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet var columns: [UIImageView]!
+    @IBOutlet var columns: [UIImageView]! // Should probably be replaced by a UIButton
+    
     
     
     // Variables
@@ -60,7 +61,7 @@ class CalendarWeekViewController: UIViewController {
         
     }
     
-    
+    // Should probably be replaced by an action from a UIButton
     @IBAction func didTapColumn(_ sender: UITapGestureRecognizer) {
         selectedColumn = sender.view as! UIImageView
         performSegue(withIdentifier: "DayViewSegue", sender: nil)

@@ -14,17 +14,33 @@ class TodayViewController: UIViewController, UIScrollViewDelegate {
     // Outlets
     @IBOutlet var backgroundView: UIView!
         @IBOutlet weak var containerScrollView: UIScrollView!
-            @IBOutlet weak var imageView: UIImageView!
+            @IBOutlet weak var imageScrollView: UIImageView!
             @IBOutlet weak var bubblesContainerView: UIImageView!
     
                 @IBOutlet weak var bubbleWordView: UIImageView!
     
                 @IBOutlet weak var bubbleTimeView: UIImageView!
+            @IBOutlet weak var imageSnippetView: UIImageView!
+                @IBOutlet var snippets: [UILabel]! // text snippets are currently UILabel, so to be changed based on the actual format
+    
+    
     
     
     // Variables
     // Prepare for segue from CalendarWeek VC
     var column: UIImage!
+    
+    // Variables
+//    var todayViewController: TodayViewController!
+//    var selectedColumn: UIImageView!
+//    var tapTransition: TapTransition!
+    
+    var textArchiveViewController: TextArchiveRootViewController!
+    var selectedSnippet: UIImageView!
+    var tapTransition: TapTransition!
+
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +49,13 @@ class TodayViewController: UIViewController, UIScrollViewDelegate {
         containerScrollView.delegate = self
         
         // Configure the content size of the scroll view
-        containerScrollView.contentSize = CGSize(width: 320, height: imageView.frame.size.height)
+        containerScrollView.contentSize = CGSize(width: 320, height: imageScrollView.frame.size.height)
+        
+        for snippet in snippets {
+            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapSnippet))
+            
+            snippet.addGestureRecognizer(tapRecognizer)
+        }
         
         
 //        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
@@ -75,6 +97,11 @@ class TodayViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
+    
+    @IBAction func didTapSnippet(_ sender: UITapGestureRecognizer) {
+        selectedSnippet = sender.view as! UIImageView
+        performSegue(withIdentifier: "OpenSnippetSegue", sender: nil)
+    }
     
 
     
