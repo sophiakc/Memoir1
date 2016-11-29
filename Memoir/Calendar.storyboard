@@ -176,6 +176,10 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a2B-DR-YzH" userLabel="Button Column Today">
+                                        <rect key="frame" x="234" y="62" width="87" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pqK-R6-yXW" userLabel="Go to Google Calendar Button">
@@ -197,23 +201,23 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHY-qI-Iys" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="o2v-VD-oFR">
-                    <connections>
-                        <action selector="didTapColumn:" destination="F1R-VG-Rw2" id="Vdn-Xw-EEd"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <tapGestureRecognizer id="ESE-Dv-y5f">
                     <connections>
                         <action selector="didTapColumn:" destination="F1R-VG-Rw2" id="L34-NS-PCM"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="o2v-VD-oFR">
+                    <connections>
+                        <action selector="didTapColumn:" destination="F1R-VG-Rw2" id="Vdn-Xw-EEd"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="238.75" y="-1386.2483333333332"/>
         </scene>
-        <!--Today-->
+        <!--TodayViewController-->
         <scene sceneID="vHd-md-2Hs">
             <objects>
-                <viewControllerPlaceholder storyboardName="Today" id="fRL-Xz-kfl" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Today" referencedIdentifier="TodayViewController" id="fRL-Xz-kfl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAM-bS-G4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="238" y="-931"/>

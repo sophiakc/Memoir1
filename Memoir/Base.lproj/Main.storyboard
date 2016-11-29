@@ -73,7 +73,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-94" y="1074"/>
+            <point key="canvasLocation" x="-95" y="1234"/>
         </scene>
         <!--TodayViewController-->
         <scene sceneID="Pso-YN-ZXt">
@@ -95,9 +95,6 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                                 <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ivc-h4-ics" appends="YES" id="p3Z-aD-SQG"/>
-                                </connections>
                             </view>
                         </subviews>
                     </view>
@@ -105,15 +102,10 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                     <connections>
                         <outlet property="containerView" destination="mT4-6L-M5F" id="pjN-Jh-L48"/>
                         <segue destination="nmN-vm-5x9" kind="push" identifier="newtextSegue" id="v4b-mV-uVl"/>
-                        <segue destination="rp0-6Q-zId" kind="modal" identifier="GoToTodayViewSegue" id="zd9-fa-N3B"/>
+                        <segue destination="rp0-6Q-zId" kind="modal" identifier="todayViewSegue" id="zd9-fa-N3B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0E-9h-CXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="ivc-h4-ics">
-                    <connections>
-                        <action selector="didPan:" destination="OGb-bJ-nsl" id="AO8-3q-Phf"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-94" y="386"/>
         </scene>
@@ -166,7 +158,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ey-Ki-lJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-635" y="1074"/>
+            <point key="canvasLocation" x="-636" y="1234"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GSI-1I-hsQ">
