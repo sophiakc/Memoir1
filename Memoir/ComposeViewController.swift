@@ -76,12 +76,15 @@ class ComposeViewController: UIViewController {
         let location = sender.location(in: view)
         
         if sender.state == .began {
-            print("Gesture began")
-            navigationController!.popViewController(animated: true)
+            
             
         } else if sender.state == .changed {
             
         } else if sender.state == .ended {
+            print("Gesture ended")
+            UIView.animate(withDuration: 0.3, animations: { 
+                navigationController!.popViewController(animated: true)
+            })
             
         }
     

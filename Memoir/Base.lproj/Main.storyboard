@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--StartWritingViewController-->
+        <!--ComposeViewController-->
         <scene sceneID="RSV-vj-7rH">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="NewTextEntry" storyboardName="NewTextEntry" referencedIdentifier="StartWritingViewController" id="nmN-vm-5x9" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="NewTextEntry" storyboardName="NewTextEntry" referencedIdentifier="ComposeViewController" id="nmN-vm-5x9" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Jgx-xb-I1D"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwV-3M-yHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -61,17 +61,9 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                         </subviews>
                         <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="HIu-Wd-FZn" appends="YES" id="I7g-G7-TkB"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="HIu-Wd-FZn">
-                    <connections>
-                        <action selector="didPanReadOnly:" destination="BYZ-38-t0r" id="ss4-YY-H7X"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-95" y="1234"/>
         </scene>
@@ -95,17 +87,25 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</str
                                 <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pob-VL-vtE" appends="YES" id="dyc-Xp-rx8"/>
+                                </connections>
                             </view>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" id="5Ow-Sf-1CJ"/>
                     <connections>
                         <outlet property="containerView" destination="mT4-6L-M5F" id="pjN-Jh-L48"/>
-                        <segue destination="nmN-vm-5x9" kind="push" identifier="newtextSegue" id="v4b-mV-uVl"/>
-                        <segue destination="rp0-6Q-zId" kind="modal" identifier="todayViewSegue" id="zd9-fa-N3B"/>
+                        <segue destination="nmN-vm-5x9" kind="push" identifier="ComposeSegue" id="v4b-mV-uVl"/>
+                        <segue destination="rp0-6Q-zId" kind="modal" identifier="TodayViewSegue" id="zd9-fa-N3B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0E-9h-CXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="pob-VL-vtE">
+                    <connections>
+                        <action selector="didPan:" destination="OGb-bJ-nsl" id="oqz-uQ-hsl"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-94" y="386"/>
         </scene>

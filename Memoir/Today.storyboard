@@ -158,17 +158,17 @@
                 </panGestureRecognizer>
                 <tapGestureRecognizer id="37e-IK-cvM">
                     <connections>
-                        <action selector="didTapSnippet:" destination="dRr-BC-X4h" id="Fg5-OR-O7J"/>
+                        <action selector="didTapSnippet:" destination="dRr-BC-X4h" id="jpN-JR-h24"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="RU9-aX-mkB" userLabel="Did Tap Snippet">
                     <connections>
-                        <action selector="didTapSnippet:" destination="dRr-BC-X4h" id="1a8-WJ-oUB"/>
+                        <action selector="didTapSnippet:" destination="dRr-BC-X4h" id="auK-mX-8mm"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="nWS-g9-fsN" userLabel="Did Tap Snippet">
                     <connections>
-                        <action selector="didTapSnippet:" destination="dRr-BC-X4h" id="Xa5-wJ-2iZ"/>
+                        <action selector="didTapSnippet:" destination="dRr-BC-X4h" id="6Fj-tF-lBU"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
