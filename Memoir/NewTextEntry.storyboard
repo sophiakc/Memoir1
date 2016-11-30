@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Start Writing View Controller-->
+        <!--Compose View Controller-->
         <scene sceneID="SPX-ch-nbA">
             <objects>
-                <viewController storyboardIdentifier="StartWritingViewController" title="StartWritingViewController" id="0t1-Fo-ZGZ" userLabel="Start Writing View Controller" customClass="StartWritingViewController" customModule="Memoir" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ComposeViewController" title="StartWritingViewController" id="0t1-Fo-ZGZ" userLabel="Compose View Controller" customClass="ComposeViewController" customModule="Memoir" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JWQ-ve-0OE"/>
                         <viewControllerLayoutGuide type="bottom" id="Q3a-WD-t0K"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZa-7n-3Mk" userLabel="Start Writing View">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZa-7n-3Mk" userLabel="Compose View">
                                 <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -61,7 +61,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="L7s-6w-Rpg"/>
                     <connections>
-                        <outlet property="startWritingView" destination="AZa-7n-3Mk" id="Kbd-Ih-RT1"/>
+                        <outlet property="composeView" destination="AZa-7n-3Mk" id="u4B-4q-KDK"/>
                         <outlet property="textField" destination="0XO-rN-EpF" id="1b6-sJ-8Do"/>
                     </connections>
                 </viewController>

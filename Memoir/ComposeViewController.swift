@@ -1,5 +1,5 @@
 //
-//  StartWritingViewController.swift
+//  ComposeViewController.swift
 //  Memoir
 //
 //  Created by Monith Ilavarasan on 11/20/16.
@@ -9,16 +9,16 @@
 
 import UIKit
 
-class StartWritingViewController: UIViewController {
+class ComposeViewController: UIViewController {
     
     // Outlets
-    @IBOutlet weak var startWritingView: UIView!
+    @IBOutlet weak var composeView: UIView!
     
     @IBOutlet weak var textField: UITextView!
     
     
     // Variables
-//    var startWritingViewOriginalCenter: CGPoint!
+//    var composeViewOriginalCenter: CGPoint!
     
     
     

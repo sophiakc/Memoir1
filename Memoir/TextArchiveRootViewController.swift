@@ -18,6 +18,20 @@ class TextArchiveRootViewController: UIViewController {
     var readOnlyViewController: UIViewController!
     
     
+    
+    var feedViewController: UIViewController!
+    var menuViewController: UIViewController!
+    
+    var feedViewRightOffset: CGFloat!
+    var feedViewLeft: CGPoint!
+    var feedViewRight: CGPoint!
+    var feedViewOriginalCenter: CGPoint!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -75,26 +89,7 @@ class TextArchiveRootViewController: UIViewController {
 
 
 
----
 
-// Outlets
-@IBOutlet weak var menuHamburgerView: UIView!
-@IBOutlet weak var feedHamburgerView: UIView!
-
-
-// Variables
-var feedViewController: UIViewController!
-var menuViewController: UIViewController!
-
-var feedViewRightOffset: CGFloat!
-var feedViewLeft: CGPoint!
-var feedViewRight: CGPoint!
-var feedViewOriginalCenter: CGPoint!
-
-
-
-override func viewDidLoad() {
-    super.viewDidLoad()
     
     let main = UIStoryboard(name: "Main", bundle: nil)
     

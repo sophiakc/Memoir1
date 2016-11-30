@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12786F951DE2911000B2D778 /* StartWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12786F941DE2911000B2D778 /* StartWritingViewController.swift */; };
+		12786F951DE2911000B2D778 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12786F941DE2911000B2D778 /* ComposeViewController.swift */; };
 		12786F971DE29C0B00B2D778 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12786F961DE29C0B00B2D778 /* TodayViewController.swift */; };
 		12786F991DE29E9E00B2D778 /* CalendarWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12786F981DE29E9E00B2D778 /* CalendarWeekViewController.swift */; };
 		7E1132051DECCCA100E308A7 /* Today.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1132041DECCCA100E308A7 /* Today.storyboard */; };
@@ -47,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12786F941DE2911000B2D778 /* StartWritingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartWritingViewController.swift; sourceTree = "<group>"; };
+		12786F941DE2911000B2D778 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		12786F961DE29C0B00B2D778 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		12786F981DE29E9E00B2D778 /* CalendarWeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarWeekViewController.swift; sourceTree = "<group>"; };
 		7E1132041DECCCA100E308A7 /* Today.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Today.storyboard; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		7E9600C61DECF32B000509B6 /* NewTextEntry */ = {
 			isa = PBXGroup;
 			children = (
-				12786F941DE2911000B2D778 /* StartWritingViewController.swift */,
+				12786F941DE2911000B2D778 /* ComposeViewController.swift */,
 				7E9600C71DECF3F0000509B6 /* NewTextEntry.storyboard */,
 			);
 			name = NewTextEntry;
@@ -351,7 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E7FF3411DD739A0005B9CB2 /* Common.swift in Sources */,
-				12786F951DE2911000B2D778 /* StartWritingViewController.swift in Sources */,
+				12786F951DE2911000B2D778 /* ComposeViewController.swift in Sources */,
 				933D85AF1DE4F78A0038662A /* ReadOnlyViewController.swift in Sources */,
 				7E11320E1DECD81000E308A7 /* FlexibleAspectImageView.swift in Sources */,
 				7E7FF3421DD739A0005B9CB2 /* FadeTransition.swift in Sources */,
