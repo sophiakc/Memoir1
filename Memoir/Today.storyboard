@@ -132,6 +132,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="IUA-Zb-VJB" appends="YES" id="xdW-FK-9vo"/>
+                                    <outletCollection property="gestureRecognizers" destination="z6m-8q-Oj3" appends="YES" id="bfb-lz-XsR"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -156,14 +157,15 @@
                         <action selector="didPan:" destination="dRr-BC-X4h" id="Igd-Dm-5ck"/>
                     </connections>
                 </panGestureRecognizer>
-                <tapGestureRecognizer id="37e-IK-cvM">
-                    <connections>
-                        <action selector="didTapSnippet:" destination="dRr-BC-X4h" id="jpN-JR-h24"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="z6m-8q-Oj3"/>
                 <tapGestureRecognizer id="RU9-aX-mkB" userLabel="Did Tap Snippet">
                     <connections>
                         <action selector="didTapSnippet:" destination="dRr-BC-X4h" id="auK-mX-8mm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="37e-IK-cvM">
+                    <connections>
+                        <action selector="didTapSnippet:" destination="dRr-BC-X4h" id="jpN-JR-h24"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="nWS-g9-fsN" userLabel="Did Tap Snippet">

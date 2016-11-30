@@ -91,18 +91,24 @@ class TextArchiveRootViewController: UIViewController {
             print (translation.y)
             
             // If panning down
-            if velocity.y > 0 {
+            if velocity.y > 50 {
                 UIView.animate(withDuration:0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options:[] ,
                                animations: { () -> Void in
-                                self.containerView.center = self.containerViewBottom
+//                                self.containerView.center = self.containerViewBottom
                                 self.performSegue(withIdentifier: "TodayViewSegue", sender: nil)
+                    }, completion: nil)
+            } else if velocity.x > 0 {
+                UIView.animate(withDuration:0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options:[] ,
+                               animations: { () -> Void in
+                                self.containerView.center = self.containerViewTop
+                                self.performSegue(withIdentifier: "ComposeViewSegue", sender: nil)
                     }, completion: nil)
             } else {
                 UIView.animate(withDuration:0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options:[] ,
                                animations: { () -> Void in
                                 self.containerView.center = self.containerViewTop
+                                
                     }, completion: nil)
-            }
         }
             
 //            performSegue(withIdentifier: "ComposeSegue", sender: nil)
@@ -120,4 +126,6 @@ class TextArchiveRootViewController: UIViewController {
 
     }
         
+}
+
 }

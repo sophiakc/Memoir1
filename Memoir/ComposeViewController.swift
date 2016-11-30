@@ -83,7 +83,7 @@ class ComposeViewController: UIViewController {
         } else if sender.state == .ended {
             print("Gesture ended")
             UIView.animate(withDuration: 0.3, animations: { 
-                navigationController!.popViewController(animated: true)
+                self.navigationController!.popViewController(animated: true)
             })
             
         }

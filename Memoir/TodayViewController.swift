@@ -21,7 +21,7 @@ class TodayViewController: UIViewController, UIScrollViewDelegate {
     
                 @IBOutlet weak var bubbleTimeView: UIImageView!
             @IBOutlet weak var imageSnippetView: UIImageView!
-                @IBOutlet var snippets: [UILabel]! // text snippets are currently UILabel, so to be changed based on the actual format
+                @IBOutlet var snippets: [UIButton]! // text snippets are currently UIButton, so to be changed based on the actual format
     
     
     
@@ -36,7 +36,7 @@ class TodayViewController: UIViewController, UIScrollViewDelegate {
 //    var tapTransition: TapTransition!
     
     var textArchiveViewController: TextArchiveRootViewController!
-    var selectedSnippet: UIImageView!
+    var selectedSnippet: UIButton!
     var tapTransition: TapTransition!
 
     
@@ -98,12 +98,12 @@ class TodayViewController: UIViewController, UIScrollViewDelegate {
     
     
     
-    @IBAction func didTapSnippet(_ sender: UITapGestureRecognizer) {
-        selectedSnippet = sender.view as! UIImageView
+    @IBAction func didTapSnippet(_ sender: UIButton) {
+//        selectedSnippet = sender.view as! UIImageView
         performSegue(withIdentifier: "OpenSnippetSegue", sender: nil)
+        
     }
-    
-
+   
     
     
 //    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
