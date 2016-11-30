@@ -13,22 +13,16 @@ class ReadOnlyViewController: UIViewController {
     // Variables
     var fadeTransition: FadeTransition!
     
-    // Prepare for segue from CalendarWeek VC
-//    var snippet: UILabel!
-    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
-    @IBAction func didPanReadOnly(_ sender: UIPanGestureRecognizer) {
-        performSegue(withIdentifier: "GoToTodayViewSegue", sender: nil)
-        
-    }
+   
+    // This view is shown in TextArchiveRootViewController and contains all the text previously written
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.

@@ -1,5 +1,5 @@
 //
-//  StartWritingViewController.swift
+//  ComposeViewController.swift
 //  Memoir
 //
 //  Created by Monith Ilavarasan on 11/20/16.
@@ -9,16 +9,16 @@
 
 import UIKit
 
-class StartWritingViewController: UIViewController {
+class ComposeViewController: UIViewController {
     
     // Outlets
-    @IBOutlet weak var startWritingView: UIView!
+    @IBOutlet weak var composeView: UIView!
     
     @IBOutlet weak var textField: UITextView!
     
     
     // Variables
-//    var startWritingViewOriginalCenter: CGPoint!
+//    var composeViewOriginalCenter: CGPoint!
     
     
     
@@ -76,12 +76,15 @@ class StartWritingViewController: UIViewController {
         let location = sender.location(in: view)
         
         if sender.state == .began {
-            print("Gesture began")
-            navigationController!.popViewController(animated: true)
+            
             
         } else if sender.state == .changed {
             
         } else if sender.state == .ended {
+            print("Gesture ended")
+            UIView.animate(withDuration: 0.3, animations: { 
+                self.navigationController!.popViewController(animated: true)
+            })
             
         }
     
